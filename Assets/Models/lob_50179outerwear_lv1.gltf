@@ -1,0 +1,249 @@
+{
+  "asset": {
+    "copyright": "",
+    "generator": "Snuggle (SharpGLTF 1.0.0)",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "POSITION",
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1336,
+      "max": [
+        0.3939270079135895,
+        0.21473371982574463,
+        1.74835205078125
+      ],
+      "min": [
+        -0.3939270079135895,
+        -0.20574826002120972,
+        0.40564095973968506
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "NORMAL",
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 1336,
+      "type": "VEC3"
+    },
+    {
+      "name": "TANGENT",
+      "bufferView": 0,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 1336,
+      "type": "VEC4"
+    },
+    {
+      "name": "COLOR_0",
+      "bufferView": 0,
+      "byteOffset": 40,
+      "componentType": 5121,
+      "count": 1336,
+      "normalized": true,
+      "type": "VEC4"
+    },
+    {
+      "name": "TEXCOORD_0",
+      "bufferView": 0,
+      "byteOffset": 44,
+      "componentType": 5126,
+      "count": 1336,
+      "type": "VEC2"
+    },
+    {
+      "name": "TEXCOORD_1",
+      "bufferView": 0,
+      "byteOffset": 52,
+      "componentType": 5126,
+      "count": 1336,
+      "type": "VEC2"
+    },
+    {
+      "name": "JOINTS_0",
+      "bufferView": 0,
+      "byteOffset": 60,
+      "componentType": 5121,
+      "count": 1336,
+      "type": "VEC4"
+    },
+    {
+      "name": "WEIGHTS_0",
+      "bufferView": 0,
+      "byteOffset": 64,
+      "componentType": 5126,
+      "count": 1336,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 5619,
+      "type": "SCALAR"
+    },
+    {
+      "name": "POSITION",
+      "bufferView": 0,
+      "byteOffset": 106880,
+      "componentType": 5126,
+      "count": 694,
+      "max": [
+        0.3902449905872345,
+        0.19567790627479553,
+        1.1668390035629272
+      ],
+      "min": [
+        -0.3902449905872345,
+        -0.20231008529663086,
+        0.51938796043396
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "NORMAL",
+      "bufferView": 0,
+      "byteOffset": 106892,
+      "componentType": 5126,
+      "count": 694,
+      "type": "VEC3"
+    },
+    {
+      "name": "TANGENT",
+      "bufferView": 0,
+      "byteOffset": 106904,
+      "componentType": 5126,
+      "count": 694,
+      "type": "VEC4"
+    },
+    {
+      "name": "COLOR_0",
+      "bufferView": 0,
+      "byteOffset": 106920,
+      "componentType": 5121,
+      "count": 694,
+      "normalized": true,
+      "type": "VEC4"
+    },
+    {
+      "name": "TEXCOORD_0",
+      "bufferView": 0,
+      "byteOffset": 106924,
+      "componentType": 5126,
+      "count": 694,
+      "type": "VEC2"
+    },
+    {
+      "name": "TEXCOORD_1",
+      "bufferView": 0,
+      "byteOffset": 106932,
+      "componentType": 5126,
+      "count": 694,
+      "type": "VEC2"
+    },
+    {
+      "name": "JOINTS_0",
+      "bufferView": 0,
+      "byteOffset": 106940,
+      "componentType": 5121,
+      "count": 694,
+      "type": "VEC4"
+    },
+    {
+      "name": "WEIGHTS_0",
+      "bufferView": 0,
+      "byteOffset": 106944,
+      "componentType": 5126,
+      "count": 694,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 11238,
+      "componentType": 5123,
+      "count": 3309,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 162400,
+      "byteStride": 80,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 17856,
+      "byteOffset": 162400,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 180256,
+      "uri": "lob_50179outerwear_lv1.5863788239131783047_Mesh.bin"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Submesh0",
+      "pbrMetallicRoughness": {}
+    },
+    {
+      "name": "Submesh1",
+      "pbrMetallicRoughness": {}
+    }
+  ],
+  "meshes": [
+    {
+      "name": "lob_50179outerwear_lv1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "COLOR_0": 3,
+            "TEXCOORD_0": 4,
+            "TEXCOORD_1": 5,
+            "JOINTS_0": 6,
+            "WEIGHTS_0": 7
+          },
+          "indices": 8,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TANGENT": 11,
+            "COLOR_0": 12,
+            "TEXCOORD_0": 13,
+            "TEXCOORD_1": 14,
+            "JOINTS_0": 15,
+            "WEIGHTS_0": 16
+          },
+          "indices": 17,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

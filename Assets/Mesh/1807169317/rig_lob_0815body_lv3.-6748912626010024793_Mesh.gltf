@@ -1,0 +1,249 @@
+{
+  "asset": {
+    "copyright": "",
+    "generator": "Snuggle (SharpGLTF 1.0.0)",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "POSITION",
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 7567,
+      "max": [
+        0.46688374876976013,
+        0.29082831740379333,
+        1.6345529556274414
+      ],
+      "min": [
+        -0.46688374876976013,
+        -0.2302890419960022,
+        -0.014744095504283905
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "NORMAL",
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 7567,
+      "type": "VEC3"
+    },
+    {
+      "name": "TANGENT",
+      "bufferView": 0,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 7567,
+      "type": "VEC4"
+    },
+    {
+      "name": "COLOR_0",
+      "bufferView": 0,
+      "byteOffset": 40,
+      "componentType": 5121,
+      "count": 7567,
+      "normalized": true,
+      "type": "VEC4"
+    },
+    {
+      "name": "TEXCOORD_0",
+      "bufferView": 0,
+      "byteOffset": 44,
+      "componentType": 5126,
+      "count": 7567,
+      "type": "VEC2"
+    },
+    {
+      "name": "TEXCOORD_1",
+      "bufferView": 0,
+      "byteOffset": 52,
+      "componentType": 5126,
+      "count": 7567,
+      "type": "VEC2"
+    },
+    {
+      "name": "JOINTS_0",
+      "bufferView": 0,
+      "byteOffset": 60,
+      "componentType": 5121,
+      "count": 7567,
+      "type": "VEC4"
+    },
+    {
+      "name": "WEIGHTS_0",
+      "bufferView": 0,
+      "byteOffset": 64,
+      "componentType": 5126,
+      "count": 7567,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 38010,
+      "type": "SCALAR"
+    },
+    {
+      "name": "POSITION",
+      "bufferView": 0,
+      "byteOffset": 605360,
+      "componentType": 5126,
+      "count": 170,
+      "max": [
+        0.11099585890769958,
+        -0.04505885764956474,
+        1.1609673500061035
+      ],
+      "min": [
+        -0.11099585890769958,
+        -0.13116344809532166,
+        1.0451642274856567
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "NORMAL",
+      "bufferView": 0,
+      "byteOffset": 605372,
+      "componentType": 5126,
+      "count": 170,
+      "type": "VEC3"
+    },
+    {
+      "name": "TANGENT",
+      "bufferView": 0,
+      "byteOffset": 605384,
+      "componentType": 5126,
+      "count": 170,
+      "type": "VEC4"
+    },
+    {
+      "name": "COLOR_0",
+      "bufferView": 0,
+      "byteOffset": 605400,
+      "componentType": 5121,
+      "count": 170,
+      "normalized": true,
+      "type": "VEC4"
+    },
+    {
+      "name": "TEXCOORD_0",
+      "bufferView": 0,
+      "byteOffset": 605404,
+      "componentType": 5126,
+      "count": 170,
+      "type": "VEC2"
+    },
+    {
+      "name": "TEXCOORD_1",
+      "bufferView": 0,
+      "byteOffset": 605412,
+      "componentType": 5126,
+      "count": 170,
+      "type": "VEC2"
+    },
+    {
+      "name": "JOINTS_0",
+      "bufferView": 0,
+      "byteOffset": 605420,
+      "componentType": 5121,
+      "count": 170,
+      "type": "VEC4"
+    },
+    {
+      "name": "WEIGHTS_0",
+      "bufferView": 0,
+      "byteOffset": 605424,
+      "componentType": 5126,
+      "count": 170,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 76020,
+      "componentType": 5123,
+      "count": 792,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 618960,
+      "byteStride": 80,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 77604,
+      "byteOffset": 618960,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 696564,
+      "uri": "rig_lob_0815body_lv3.-6748912626010024793_Mesh.bin"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Submesh0",
+      "pbrMetallicRoughness": {}
+    },
+    {
+      "name": "Submesh1",
+      "pbrMetallicRoughness": {}
+    }
+  ],
+  "meshes": [
+    {
+      "name": "rig_lob_0815body_lv3",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "COLOR_0": 3,
+            "TEXCOORD_0": 4,
+            "TEXCOORD_1": 5,
+            "JOINTS_0": 6,
+            "WEIGHTS_0": 7
+          },
+          "indices": 8,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TANGENT": 11,
+            "COLOR_0": 12,
+            "TEXCOORD_0": 13,
+            "TEXCOORD_1": 14,
+            "JOINTS_0": 15,
+            "WEIGHTS_0": 16
+          },
+          "indices": 17,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
