@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWsN9C_nps.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWsOdC_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: 'Exo 2';
+    font-weight: bold;
+    font-size: 22px;
+    background: #222;
+    color: #ccc;
+    margin: 0;
+    overflow: visible;
+}
+
+#img-holder {
+    background: #ffffff1f;
+    border-radius: 5px;
+    width: 30%;
+    padding: 0 2.5%;
+    border: 2px solid #0484aa7f;
+    overflow: hidden;
+}
+
+#img-holder>img {
+    width: 100%;
+}
+
+#topholder,
+#bottomholder {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+#topholder {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+#bottomholder {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+#holder {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 100%;
+    height: calc(100% - 500px);
+}
+
+#stat-table-holder {
+    width: 100%;
+    background: #ffffff1f;
+    border-radius: 5px;
+    height: min-content;
+    align-items: center;
+    justify-items: center;
+    overflow: auto;
+}
+
+#monname {
+    background: #0000002e;
+    width: 120%;
+    margin-left: -10%;
+    margin-top: -26px;
+    text-align: center;
+}
+
+.pokemon-img {
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    outline: none;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    max-width: 210px;
+}
+
+.pokemon-img>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.pokemon-img>a>img {
+    object-fit: contain;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: border .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+td,
+th {
+    border-left: 2px solid #0484aa7f;
+    padding: 8px;
+}
+
+td:last-child,
+th:last-child {
+    border-right: 2px solid #0484aa7f;
+}
+
+tr {
+    transition: background .2s;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff12;
+}
+
+tbody tr:last-child {
+    border-bottom: 2px solid #0484aa7f;
+}
+
+tr:hover {
+    background-color: #0484aa7f;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #0484aa;
+    color: white;
+}
+
+th.sorted::after {
+    content: "\25B4";
+    position: absolute;
+    right: 5px;
+}
+
+th.sorted-reverse::after {
+    content: "\25BE";
+    position: absolute;
+    right: 5px;
+}
+
+.header-fixed th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00000096;
+    border-radius: 5px;
+    transition: background .2s;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top - higher than any other z-index in your site*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    max-height: fit-content;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    background-image: url("../assets/t_common_bg_element.png");
+}
+
+
+/* The Close Button */
+
+.close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#skin-list {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-gap: 0.1em;
+}
+
+.skin-entry>img {
+    width: 100%;
+}
+
+#root-holder {
+    margin-left: 10em;
+    margin-right: 10em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.1em;
+}
+
+#model-holder {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+#webgl-holder {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}

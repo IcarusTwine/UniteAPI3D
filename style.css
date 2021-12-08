@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWsN9C_nps.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWsOdC_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: 'Exo 2';
+    font-weight: bold;
+    font-size: 22px;
+    background: #222;
+    color: #ccc;
+    margin: 0;
+    overflow: visible;
+}
+
+#holder {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 100%;
+    height: calc(100% - 500px);
+}
+
+#pokemon-list {
+    width: 100%;
+    background: #ffffff1f;
+    border-radius: 5px;
+    display: grid;
+    height: min-content;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.pokemon-img {
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    outline: none;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    max-width: 210px;
+}
+
+.pokemon-img>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.pokemon-img>a>img {
+    object-fit: contain;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: border .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+td,
+th {
+    border-left: 2px solid #0484aa7f;
+    padding: 8px;
+}
+
+tr {
+    transition: background .2s;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff12;
+}
+
+tr:hover {
+    background-color: #0484aa7f;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #0484aa;
+    color: white;
+}
+
+th.sorted::after {
+    content: "\25B4";
+    position: absolute;
+    right: 5px;
+}
+
+th.sorted-reverse::after {
+    content: "\25BE";
+    position: absolute;
+    right: 5px;
+}
+
+.header-fixed th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00000096;
+    border-radius: 5px;
+    transition: background .2s;
+}
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+.content {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  padding: 10 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.HeroIcon {
+    position: relative;
+}
+.HeroIconLevel {
+    font-size:12px;
+    line-height: 16px;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+    color:rgb(255, 255, 255);
+    right: 10%;
+    bottom:20px;
+}

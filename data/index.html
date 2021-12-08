@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>UniteApi.dev</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="../bins/Pokemon_Base.js"></script>
+    <script type="text/javascript" src="../bins/Pokemon_Hero.js"></script>
+    <script type="text/javascript" src="../bins/Pokemon_Avatar_Base.js"></script>
+    <script type="text/javascript" src="../bins/Pokemon_StatGrowth.js"></script>
+    <script type="text/javascript" src="../bins/Active_Skill_Hero.js"></script>
+    <script type="text/javascript" src="../bins/AvatarItem.js"></script>
+    <script type="text/javascript" src="../bins/AvatarSuit.js"></script>
+  </head>
+
+  <body>
+    <div id="root-holder">
+      <div id="topholder">
+        <div id="img-holder" />
+      </div>
+      <div id="model-holder">
+        <button id="Open3D">3D Viewer</button>
+        <div id="ModelBase" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="webgl-holder">
+              <canvas class="webgl" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottomholder">
+        <div>
+          <div id="skin-holder" />
+        </div>
+      </div>
+    </div>
+    <div id="holder">
+      <div id="stat-table-holder" />
+    </div>
+    <template id="img-holder-content">
+      <img src="" alt="" onerror="this.style.opacity = 0"/>
+      <div id="monname"></div>
+    </template>
+    <template id="skin-holder-content">
+      <div id="skin-list">
+
+      </div>
+    </template>
+    <template id="skin-holder-entry">
+      <div class="skin-entry">
+        <img src=""/>
+      </div>
+    </template>
+    <template id="stat-table-holder-content">
+      <table id="stat-table" class="header-fixed">
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Base HP</th>
+            <th>Base ATK</th>
+            <th>Base Sp.ATK</th>
+            <th>Base DEF</th>
+            <th>Base Sp.DEF</th>
+            <th>Base Speed</th>
+            <th>Base Recover</th>
+            <th>ATK Speed</th>
+          </tr>
+        </thead>
+        <tbody id="stat-table-body">
+
+        </tbody>
+      </table>
+    </template>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="module" src="3dloader.js"></script>
+    <script>
+      const modal = document.querySelector("#ModelBase");
+      const btn = document.querySelector("#Open3D");
+      const span = document.querySelector(".close");
+
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+
+</html>
